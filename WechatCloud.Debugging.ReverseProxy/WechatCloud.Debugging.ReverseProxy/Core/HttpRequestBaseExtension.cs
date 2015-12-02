@@ -18,11 +18,13 @@ namespace WechatCloud.Debugging.ReverseProxy.Core
                 switch (headerKey)
                 {
                     case "Connection":
+                    case "Cache-Control":
                     case "Content-Length":
                     case "Date":
                     case "Expect":
                     case "Host":
                     case "If-Modified-Since":
+                    case "If-None-Match":
                     case "Range":
                     case "Transfer-Encoding":
                     case "Proxy-Connection":

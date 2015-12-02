@@ -16,7 +16,7 @@ namespace WechatCloud.Debugging.ReverseProxy.Controllers
             var encoding = Encoding.UTF8;
             var bytes = Convert.FromBase64String(siteBase64);
             var site = encoding.GetString(bytes);
-
+            
             var proxyRequest = (HttpWebRequest)WebRequest.Create(site);
             Request.CopyTo(proxyRequest);
 
